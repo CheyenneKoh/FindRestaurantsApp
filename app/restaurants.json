@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "McDonalds",
+    "description": "Classic, long-running fast-food chain known for its burgers & fries.",
+    "cuisine": "Fast food",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 12AM",
+    "phone": "61365489",
+    "image": "https://www.singmenu.com/wp-content/uploads/mcdonalds.jpg",
+    "coordinate": {
+      "latitude": 1.449707308043258,
+      "longitude": 103.82011827222419
+    },
+    "address": "133 Canberra View, #01-01/02 03/28, Singapore 750133"
+  },
+  {
+    "id": 2,
+    "name": "Omote",
+    "description": "Rebranded from the previous 12-seater sushi bar, Omoté houses an expanded shop space at level three of Thomson Plaza.",
+    "cuisine": "Japanese",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 2AM",
+    "phone": "61112649",
+    "image": "https://therantingpanda.files.wordpress.com/2018/12/1-IMG_8233.jpg",
+    "coordinate": {
+      "latitude": 1.3546860337131008,
+      "longitude": 103.83110218194653
+    },
+    "address": "301 Upper Thomson Rd, #03-24A, Singapore 574408"
+  },
+  {
+    "id": 3,
+    "name": "Guiga Korean BBQ Restaurant",
+    "description": "Come down to Guiga Korean BBQ Restaurant for gan-jan ge-jang or yang-nyeom ge-jang and Wagyu Prime Beef Rib barbecue.",
+    "cuisine": "Korean",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 1AM",
+    "phone": "61110189",
+    "image": "https://cfcdn2.azsg.opensnap.com/azsg/snapphoto/photo/L9/GT49/3BJ2DPC762C4C26E9B8965lv.jpg",
+    "coordinate": {
+      "latitude": 1.2777075747885964,
+      "longitude": 103.84349446783752
+    },
+    "address": "134 Tg Pagar Rd, Singapore 088538"
+  },
+  {
+    "id": 4,
+    "name": "Subway",
+    "description": "Casual counter-serve chain for build-your-own sandwiches & salads, with health-conscious options.",
+    "cuisine": "Fast Food",
+    "serviceOptions": "Takeaway · Delivery",
+    "hours": "Closes 10PM",
+    "phone": "34563234",
+    "image": "https://cdn.britannica.com/08/193908-050-66767D57/view-Subway-restaurant-Bangkok-Thailand.jpg",
+    "coordinate": {
+      "latitude": 1.3905078833829663,
+      "longitude": 103.7638445460467
+    },
+    "address": "1 Jelebu Road, #02-11, Bukit Panjang Plaza, Singapore 677743"
+  },
+  {
+    "id": 5,
+    "name": "Starbucks",
+    "description": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
+    "cuisine": "Cafe",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 1AM",
+    "phone": "61110189",
+    "image": "https://cfcdn2.azsg.opensnap.com/azsg/snapphoto/photo/L9/GT49/3BJ2DPC762C4C26E9B8965lv.jpg",
+    "coordinate": {
+      "latitude": 1.3254538167786214,
+      "longitude": 103.7633442512201
+    },
+    "address": "3155 Commonwealth Ave W, #03 - K1 / K3 Clementi Mall, Singapore 129588"
+  },
+  {
+    "id": 6,
+    "name": "Din Tai Fung",
+    "description": "Din Tai Fung is a Taiwanese restaurant chain that specializes in Chinese Huaiyang cuisine. ",
+    "cuisine": "Taiwanese",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 9PM",
+    "phone": "61110189",
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/19/b9/5f/18/din.jpg",
+    "coordinate": {
+      "latitude": 1.3474604978941565,
+      "longitude": 103.70576620108132
+    },
+    "address": "63 Jurong West Central 3, Singapore 648331"
+  },
+  {
+    "id": 7,
+    "name": "Crystal Jade Hong Kong Kitchen",
+    "description": "Crystal Jade is a Singapore-based culinary brand with MICHELIN one star and multiple MICHELIN Bib Gourmand awards.",
+    "cuisine": "Chinese",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 1AM",
+    "phone": "61110189",
+    "image": "https://media-cdn.tripadvisor.com/media/photo-s/16/44/f3/f2/restaurant-interior.jpg",
+    "coordinate": {
+      "latitude": 1.361872148156015,
+      "longitude": 103.94574837709882
+    },
+    "address": "4 Tampines Central 5 B1, #11 Tampines Mall, 529510"
+  },
+  {
+    "id": 8,
+    "name": "Pho Street",
+    "description": "Pho Street offers a vibrant dining ambience serving authentic Vietnamese Street delightsfrom iconic Pho selections, an array of street snacks to crusty Banh Mi.",
+    "cuisine": "Vietnamese",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 1AM",
+    "phone": "61110189",
+    "image": "https://www.misstamchiak.com/wp-content/uploads/2020/08/6-1300x867.jpg",
+    "coordinate": {
+      "latitude": 1.4432091559347757,
+      "longitude": 103.78541601114733
+    },
+    "address": "6 Woodlands Square, #B2-07, Singapore 737737"
+  },
+  {
+    "id": 9,
+    "name": "Royal Thai Cuisine",
+    "description": "Come down to Guiga Korean BBQ Restaurant for gan-jan ge-jang or yang-nyeom ge-jang and Wagyu Prime Beef Rib barbecue.",
+    "cuisine": "Korean",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 1AM",
+    "phone": "61110189",
+    "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2020/08/thai-food.jpg?fit=1200%2C879&ssl=1",
+    "coordinate": {
+      "latitude": 1.3522811603611922,
+      "longitude": 103.79518876532411
+    },
+    "address": "60 Fairways Dr., Singapore 286966"
+  },
+  {
+    "id": 10,
+    "name": "Guzman Y Gomez",
+    "description": "Guzman y Gomez is an Australian multinational casual-dining and fast food restaurant chain. It specialises in Mexican cuisine dishes such as burritos, nachos, tacos, quesadillas and other Mexican-inspired items, including drinks.",
+    "cuisine": "Mexican",
+    "serviceOptions": "Dine-in · Takeaway",
+    "hours": "Closes 1AM",
+    "phone": "61110189",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Burrito.JPG",
+    "coordinate": {
+      "latitude": 1.3657046854873318,
+      "longitude": 103.76162558285765
+    },
+    "address": "63, 06-00 Hillview Ave, Stall 8 Lam Soon Building, 669569"
+  }
+]
