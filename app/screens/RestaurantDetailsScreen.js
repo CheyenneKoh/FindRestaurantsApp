@@ -1,5 +1,11 @@
 import React from "react";
-import { View, StyleSheet, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  ScrollView,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 import colors from "../config/colors";
@@ -21,52 +27,54 @@ function RestaurantDetailsScreen({ route }) {
 
   return (
     <Screen>
-      <Image
-        style={styles.image}
-        fadeDuration={1000}
-        source={{
-          width: 200,
-          height: 300,
-          uri: restaurant.image,
-        }}
-      />
-      <View style={[styles.header, styles.paddingProps]}>
-        <View>
-          <AppText style={styles.name} numberOfLines={1}>
-            {restaurant.name}
-          </AppText>
-          <AppText style={styles.cuisine} numberOfLines={2}>
-            {restaurant.cuisine}
-          </AppText>
+      <ScrollView>
+        <Image
+          style={styles.image}
+          fadeDuration={1000}
+          source={{
+            width: 200,
+            height: 300,
+            uri: restaurant.image,
+          }}
+        />
+        <View style={[styles.header, styles.paddingProps]}>
+          <View>
+            <AppText style={styles.name} numberOfLines={1}>
+              {restaurant.name}
+            </AppText>
+            <AppText style={styles.cuisine} numberOfLines={2}>
+              {restaurant.cuisine}
+            </AppText>
+          </View>
+          {restaurant.starred && (
+            <TouchableOpacity activeOpacity={0.5} onPress={() => unstar()}>
+              <AntDesign name="star" size={24} color="yellow" />
+            </TouchableOpacity>
+          )}
+          {!restaurant.starred && (
+            <TouchableOpacity activeOpacity={0.5} onPress={() => star()}>
+              <AntDesign name="staro" size={24} color="black" />
+            </TouchableOpacity>
+          )}
         </View>
-        {restaurant.starred && (
-          <TouchableOpacity activeOpacity={0.5} onPress={() => unstar()}>
-            <AntDesign name="star" size={24} color="yellow" />
-          </TouchableOpacity>
-        )}
-        {!restaurant.starred && (
-          <TouchableOpacity activeOpacity={0.5} onPress={() => star()}>
-            <AntDesign name="staro" size={24} color="black" />
-          </TouchableOpacity>
-        )}
-      </View>
-      <AppText style={[styles.description, styles.paddingProps]}>
-        {restaurant.description}
-      </AppText>
-      <View style={styles.paddingProps}>
-        <View style={styles.labelValue}>
-          <AppText style={styles.label}>Service Options: </AppText>
-          <AppText style={styles.value}>{restaurant.serviceOptions}</AppText>
+        <AppText style={[styles.description, styles.paddingProps]}>
+          {restaurant.description}
+        </AppText>
+        <View style={styles.paddingProps}>
+          <View style={styles.labelValue}>
+            <AppText style={styles.label}>Service Options: </AppText>
+            <AppText style={styles.value}>{restaurant.serviceOptions}</AppText>
+          </View>
+          <View style={styles.labelValue}>
+            <AppText style={styles.label}>Hours: </AppText>
+            <AppText style={styles.value}>{restaurant.hours}</AppText>
+          </View>
+          <View style={styles.labelValue}>
+            <AppText style={styles.label}>Phone: </AppText>
+            <AppText style={styles.value}>{restaurant.phone}</AppText>
+          </View>
         </View>
-        <View style={styles.labelValue}>
-          <AppText style={styles.label}>Hours: </AppText>
-          <AppText style={styles.value}>{restaurant.hours}</AppText>
-        </View>
-        <View style={styles.labelValue}>
-          <AppText style={styles.label}>Phone: </AppText>
-          <AppText style={styles.value}>{restaurant.phone}</AppText>
-        </View>
-      </View>
+      </ScrollView>
     </Screen>
   );
 }

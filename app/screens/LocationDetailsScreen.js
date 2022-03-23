@@ -1,5 +1,11 @@
 import React from "react";
-import { View, StyleSheet, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  ScrollView,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 import colors from "../config/colors";
@@ -21,56 +27,58 @@ function LocationDetailsScreen({ route }) {
 
   return (
     <Screen>
-      <Image
-        style={styles.image}
-        fadeDuration={1000}
-        source={{
-          width: 200,
-          height: 300,
-          uri: restaurant.image,
-        }}
-      />
-      <View style={[styles.header, styles.paddingProps]}>
-        <View>
-          <AppText style={styles.name} numberOfLines={1}>
-            {restaurant.name}
-          </AppText>
-          <AppText style={styles.cuisine} numberOfLines={2}>
-            {restaurant.cuisine}
-          </AppText>
+      <ScrollView>
+        <Image
+          style={styles.image}
+          fadeDuration={1000}
+          source={{
+            width: 200,
+            height: 300,
+            uri: restaurant.image,
+          }}
+        />
+        <View style={[styles.header, styles.paddingProps]}>
+          <View>
+            <AppText style={styles.name} numberOfLines={1}>
+              {restaurant.name}
+            </AppText>
+            <AppText style={styles.cuisine} numberOfLines={2}>
+              {restaurant.cuisine}
+            </AppText>
+          </View>
+          {restaurant.starred && (
+            <TouchableOpacity activeOpacity={0.5} onPress={() => unstar()}>
+              <AntDesign name="star" size={24} color="yellow" />
+            </TouchableOpacity>
+          )}
+          {!restaurant.starred && (
+            <TouchableOpacity activeOpacity={0.5} onPress={() => star()}>
+              <AntDesign name="staro" size={24} color="black" />
+            </TouchableOpacity>
+          )}
         </View>
-        {restaurant.starred && (
-          <TouchableOpacity activeOpacity={0.5} onPress={() => unstar()}>
-            <AntDesign name="star" size={24} color="yellow" />
-          </TouchableOpacity>
-        )}
-        {!restaurant.starred && (
-          <TouchableOpacity activeOpacity={0.5} onPress={() => star()}>
-            <AntDesign name="staro" size={24} color="black" />
-          </TouchableOpacity>
-        )}
-      </View>
-      <AppText style={[styles.description, styles.paddingProps]}>
-        {restaurant.description}
-      </AppText>
-      <View style={styles.paddingProps}>
-        <View style={styles.labelValue}>
-          <AppText style={styles.label}>Address: </AppText>
-          <AppText style={styles.value}>{restaurant.address}</AppText>
+        <AppText style={[styles.description, styles.paddingProps]}>
+          {restaurant.description}
+        </AppText>
+        <View style={styles.paddingProps}>
+          <View style={styles.labelValue}>
+            <AppText style={styles.label}>Address: </AppText>
+            <AppText style={styles.value}>{restaurant.address}</AppText>
+          </View>
+          <View style={styles.labelValue}>
+            <AppText style={styles.label}>Longitude: </AppText>
+            <AppText style={styles.value}>
+              {restaurant.coordinate.longitude}
+            </AppText>
+          </View>
+          <View style={styles.labelValue}>
+            <AppText style={styles.label}>Latitude: </AppText>
+            <AppText style={styles.value}>
+              {restaurant.coordinate.latitude}
+            </AppText>
+          </View>
         </View>
-        <View style={styles.labelValue}>
-          <AppText style={styles.label}>Longitude: </AppText>
-          <AppText style={styles.value}>
-            {restaurant.coordinate.longitude}
-          </AppText>
-        </View>
-        <View style={styles.labelValue}>
-          <AppText style={styles.label}>Latitude: </AppText>
-          <AppText style={styles.value}>
-            {restaurant.coordinate.latitude}
-          </AppText>
-        </View>
-      </View>
+      </ScrollView>
     </Screen>
   );
 }
@@ -107,6 +115,7 @@ const styles = StyleSheet.create({
   labelValue: {
     flexDirection: "row",
     marginBottom: 5,
+    flexWrap: "wrap",
   },
   label: {
     color: colors.medium,

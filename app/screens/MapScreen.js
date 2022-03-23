@@ -1,7 +1,7 @@
 import * as React from "react";
 import MapView, { Marker } from "react-native-maps";
 import { StyleSheet, Dimensions } from "react-native";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import Screen from "../components/Screen";
 
