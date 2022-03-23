@@ -20,6 +20,11 @@
     "android": {
       "package": "com.cheyennekoh.findrestaurants",
       "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCysTxv45IZ6lEVAwC7hQ8GDQu2S4zazDM"
+        }
+      },
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
